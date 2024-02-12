@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Definindo a codificação de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Definindo a escala inicial para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importando o arquivo de estilos -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dark-mode.css">
+    <!-- Definindo o ícone da guia do navegador -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <!-- Título da página -->
+    <title>Texto Secreto</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <!-- Título do cabeçalho -->
+            <h1>TEXTO SECRETO</h1>
+            <button id="modo-escuro-btn">Modo Escuro</button>
+        </nav>
+    </header>
+
+    <!-- Corpo da página -->
+    <main class="principal">
+
+        <!-- Seção para inserção de texto -->
+        <section class="campo-de-texto">
+            <!-- Área de texto para entrada do usuário -->
+            <textarea id="texto-entrada" placeholder="Favor insira o texto em minúsculo!"></textarea>
+            <!-- Menu de opções -->
+            <div class="menu-opcoes">
+                <!-- Seleção de opções (criptografar ou descriptografar) -->
+                <select id="selecione-opcao">
+                    <option value="encriptar">Criptografar</option>
+                    <option value="desencriptar">Descriptografar</option>
+                </select>
+                <!-- Botão para processar o texto -->
+                <div class="processarTexto">
+                    <button id="btnProcessar" onclick="processarTexto()">Processar</button>
+                </div>
+            </div>
+            <!-- Imagem associada ao texto -->
+            <img id="img" src="./assets/img/aberto.svg" alt="">
+        </section>
+
+        <!-- Seção para exibição do texto processado -->
+        <section class="campo-de-texto">
+            <!-- Imagem associada ao texto -->
+            <img id="img-texto" src="./assets/img/lupa_texto.svg" alt="">
+            <!-- Área de texto para exibir o resultado -->
+            <textarea id="resultado-texto-saida" readonly></textarea>
+            <!-- Menu de opções -->
+            <div class="menu-opcoes">
+                <!-- Botão para copiar o texto para a área de transferência -->
+                <button onclick="copiarTextoDeSaida()">Copiar para Área de Transferência</button>
+            </div>
+            <!-- Título das tecnologias utilizadas no projeto -->
+            <h2>Tecnologias utilizadas no projeto</h2>
+            <!-- Ícones das tecnologias -->
+            <div class="tecnologia-icon">
+                <img class="tecnologia-icon-img" src="./assets/img/html5.png" alt="html">
+                <img class="tecnologia-icon-img" src="./assets/img/css.png" alt="css">
+                <img class="tecnologia-icon-img" src="./assets/img/script-java.png" alt="javascript">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+        <!-- Informação de direitos autorais -->
+        <p>&copy; Desenvolvido por Paulo Henrique </p>
+    </footer>
+
+    <!-- Importando o arquivos de script JavaScript -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/dark-mode.js"></script>
+</body>
+
+</html>
