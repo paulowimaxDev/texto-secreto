@@ -44,8 +44,3 @@ function desencriptar(texto) {
     .replace(/ober/g, 'o')
     .replace(/ufat/g, 'u');
 }
-Contribuição
-Contribuições são bem-vindas! Se você quiser melhorar este projeto, sinta-se à vontade para enviar um pull request.
-
-Licença
-Este projeto está licenciado sob a Licença MIT.
